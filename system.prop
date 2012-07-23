@@ -6,4 +6,4 @@ rild.libargs=-d /dev/ttys0
 telephony.lteOnCdmaDevice=0
 ro.ril.hsxpa=1
 ro.ril.gprsclass=10
-ro.sf.lcd_density=170
+ro.sf.lcd_density=160
