@@ -22,9 +22,8 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Audio
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/configs/default_gain.conf:system/etc/default_gain.conf \
-	$(LOCAL_PATH)/configs/tinyucm.conf:system/etc/tinyucm.conf \
-	$(LOCAL_PATH)/configs/Volume.db:system/etc/Volume.db
+	$(LOCAL_PATH)/configs/tiny_hw.xml:system/etc/sound/espressorf \
+	$(LOCAL_PATH)/configs/audio_policy.conf:system/etc/audio_policy.conf
 
 # Packages
 PRODUCT_PACKAGES += \
@@ -37,9 +36,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
-    frameworks/base/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
-    frameworks/base/data/etc/android.software.sip.xml:system/etc/permissions/android.software.sip.xml \
-    frameworks/base/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
+    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
+    frameworks/native/data/etc/android.software.sip.xml:system/etc/permissions/android.software.sip.xml \
+    frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
 # Use the non-open-source parts, if they're present
 $(call inherit-product, vendor/samsung/p31xx/p3100-vendor.mk)
