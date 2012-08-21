@@ -23,10 +23,13 @@ $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
 LOCAL_PATH := device/samsung/p3100
 
-# This device is hdpi.
-PRODUCT_AAPT_CONFIG := normal hdpi
-PRODUCT_AAPT_PREF_CONFIG := hdpi
-PRODUCT_LOCALES += hdpi
+# the Tab 2 7" has a large mpdi screen
+PRODUCT_AAPT_CONFIG := large mdpi
+PRODUCT_AAPT_PREF_CONFIG := mdpi
+PRODUCT_LOCALES += mdpi
+
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.sf.lcd_density=160
 
 # Init files
 PRODUCT_COPY_FILES := \
