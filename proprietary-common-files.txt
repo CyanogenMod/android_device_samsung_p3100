@@ -9,7 +9,6 @@ system/etc/wifi/nvram_mfg.txt
 system/etc/wifi/nvram_net.txt
 system/lib/hw/camera.omap4.so
 system/lib/hw/gps.omap4.so
-system/lib/hw/sensors.omap4.so
 system/lib/libI420colorconvert.so
 system/lib/libOMX.TI.DUCATI1.MISC.SAMPLE.so
 system/lib/libOMX.TI.DUCATI1.VIDEO.CAMERA.so
