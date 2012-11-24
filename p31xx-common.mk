@@ -32,11 +32,16 @@ PRODUCT_LOCALES += mdpi
 PRODUCT_COPY_FILES := \
     $(LOCAL_PATH)/init.espresso.usb.rc:root/init.espresso.usb.rc \
     $(LOCAL_PATH)/init.espresso.rc:root/init.espresso.rc \
-    $(LOCAL_PATH)/ueventd.espresso.rc:root/ueventd.espresso.rc
+    $(LOCAL_PATH)/ueventd.espresso.rc:root/ueventd.espresso.rc \
+    $(LOCAL_PATH)/fstab.espresso:root/fstab.espresso
 
 # Vold
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/vold.fstab:system/etc/vold.fstab
+
+# Audio
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/audio_effects.conf:system/etc/audio_effects.conf
 
 # GPS
 PRODUCT_COPY_FILES += \
