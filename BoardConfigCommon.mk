@@ -18,6 +18,7 @@
 # by BoardConfigVendor.mk
 USE_CAMERA_STUB := true
 
+TARGET_ARCH := arm
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_SMP := true
@@ -87,6 +88,7 @@ BOARD_LEGACY_NL80211_STA_EVENTS  := true
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/p3100/bluetooth
 
 # Security
 BOARD_USES_SECURE_SERVICES := true
