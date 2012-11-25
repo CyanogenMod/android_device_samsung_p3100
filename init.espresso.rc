@@ -246,11 +246,17 @@ on post-fs-data
 
 on boot
 
-service pvrsrvctl /vendor/bin/pvrsrvctl --start --no-module
-	class core
-	user root
-	group root
-	oneshot
+service pvrsrvinit /vendor/bin/pvrsrvinit
+    class core
+    user root
+    group root
+    oneshot
+
+service pvrsrvctl /vendor/bin/pvrsrvctl_SGX540_120 --start --no-module
+    class core
+    user root
+    group root
+    oneshot
 
 service tf_daemon /system/bin/tf_daemon \
     -d -c /vendor/etc/smc_normal_world_android_cfg.ini
