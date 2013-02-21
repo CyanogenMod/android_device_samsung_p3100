@@ -682,8 +682,11 @@ static void select_output_device(struct espresso_audio_device *adev)
         }
 
         if (headset_on || headphone_on) {
-            ALOGD("%s: set voicecall: headset_input", __func__);
+            ALOGD("%s: set voicecall route: headset_input", __func__);
             set_bigroute_by_array(adev->mixer, headset_input, 1);
+        } else {
+            ALOGD("%s: set voicecall route: headset_input_disable", __func__);
+            set_bigroute_by_array(adev->mixer, headset_input_disable, 1);
         }
 
         if (bt_on) {
