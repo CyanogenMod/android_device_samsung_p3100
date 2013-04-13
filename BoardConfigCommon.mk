@@ -87,7 +87,6 @@ BOARD_BLUEDROID_VENDOR_CONF := device/samsung/p3100/bluetooth/vnd_espresso.txt
 BOARD_USES_SECURE_SERVICES := true
 
 # Recovery
-TARGET_RECOVERY_INITRC := device/samsung/p3100/rootdir/recovery.rc
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
 BOARD_UMS_LUNFILE := "/sys/class/android_usb/f_mass_storage/lun0/file"
 BOARD_USES_MMCUTILS := true
