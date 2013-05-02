@@ -86,6 +86,10 @@ BOARD_BLUEDROID_VENDOR_CONF := device/samsung/p3100/bluetooth/vnd_espresso.txt
 # Sensors
 BOARD_USE_LEGACY_SENSORS_FUSION := false
 
+# TvOut
+BOARD_USES_SKTEXTBOX := true
+COMMON_GLOBAL_CFLAGS += -DSAMSUNG_MR0_TVOUT_BLOB
+
 # Security
 BOARD_USES_SECURE_SERVICES := true
 
