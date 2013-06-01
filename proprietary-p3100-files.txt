@@ -1,5 +1,4 @@
 sbin/cbd
-system/lib/libril.so
 system/lib/libsec-ril.so
 system/lib/libsecril-client.so
 system/lib/hw/sensors.omap4.so
