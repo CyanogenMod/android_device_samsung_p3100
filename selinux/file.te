@@ -1,0 +1,2 @@
+type radio_efs_file, file_type;
+type firmware_ducati, file_type;
