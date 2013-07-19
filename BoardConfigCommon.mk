@@ -89,6 +89,21 @@ BOARD_USE_LEGACY_SENSORS_FUSION := false
 # Security
 BOARD_USES_SECURE_SERVICES := true
 
+# Selinux
+ifeq ($(HAVE_SELINUX),true)
+
+BOARD_SEPOLICY_DIRS := \
+	device/samsung/p3100/selinux
+
+BOARD_SEPOLICY_UNION := \
+	file_contexts \
+	file.te \
+	device.te \
+	domain.te \
+	pvrsrvinit.te
+
+endif
+
 # Recovery
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
 BOARD_UMS_LUNFILE := "/sys/class/android_usb/f_mass_storage/lun0/file"
