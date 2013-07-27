@@ -38,10 +38,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/ueventd.espresso.rc:root/ueventd.espresso.rc \
     $(LOCAL_PATH)/rootdir/fstab.espresso:root/fstab.espresso
 
-# Vold
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/vold.fstab:system/etc/vold.fstab
-
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio_effects.conf:system/etc/audio_effects.conf
