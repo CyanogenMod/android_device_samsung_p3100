@@ -95,6 +95,8 @@ BOARD_UMS_LUNFILE := "/sys/class/android_usb/f_mass_storage/lun0/file"
 BOARD_USES_MMCUTILS := true
 BOARD_HAS_NO_MISC_PARTITION := true
 BOARD_HAS_NO_SELECT_BUTTON := true
+TARGET_RECOVERY_FSTAB := device/samsung/p3100/rootdir/fstab.espresso
+RECOVERY_FSTAB_VERSION := 2
 
 # Charging mode
 BOARD_CHARGER_RES := device/samsung/p3100/res/charger
