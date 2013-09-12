@@ -404,7 +404,7 @@ on property:ro.bootmode=charger
     write /sys/class/android_usb/android0/functions adb
     write /sys/class/android_usb/android0/enable 1
     write /sys/class/android_usb/android0/iManufacturer samsung
-    write /sys/class/android_usb/android0/iProduct GT-I9100G
+    write /sys/class/android_usb/android0/iProduct $(ro.product.model)
     start adbd
 
 on property:ro.bootmode=charger
