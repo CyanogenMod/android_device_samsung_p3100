@@ -8,3 +8,6 @@ ro.ril.hsxpa=1
 ro.ril.gprsclass=10
 ro.sf.lcd_density=160
 ro.sf.hwrotation=270
+
+# Disable GC freed lines
+dalvik.vm.debug.alloc=0
