@@ -36,20 +36,20 @@
 
 struct sensor_t piranha_sensors[] = {
 	{ "BMA254 Acceleration Sensor", "Bosch", 1, SENSOR_TYPE_ACCELEROMETER,
-		SENSOR_TYPE_ACCELEROMETER, 19.6f, 0.0383f, 0.13f, 10000, {}, },
+		SENSOR_TYPE_ACCELEROMETER, 19.6f, 0.0383f, 0.13f, 10000, 0, 0, {}, },
 	{ "YAS530 Magnetic Sensor", "Yamaha", 1, SENSOR_TYPE_MAGNETIC_FIELD,
-		SENSOR_TYPE_MAGNETIC_FIELD, 800.0f, 0.3f, 4.0f, 10000, {}, },
+		SENSOR_TYPE_MAGNETIC_FIELD, 800.0f, 0.3f, 4.0f, 10000, 0, 0, {}, },
 	{ "YAS Orientation Sensor", "Yamaha", 1, SENSOR_TYPE_ORIENTATION,
-		SENSOR_TYPE_ORIENTATION, 360.0f, 0.1f, 0.0f, 10000, {}, },
+		SENSOR_TYPE_ORIENTATION, 360.0f, 0.1f, 0.0f, 10000, 0, 0, {}, },
 #ifdef TARGET_DEVICE_P5100
 	{ "BH1721 Light Sensor", "ROHM", 1, SENSOR_TYPE_LIGHT,
-		SENSOR_TYPE_LIGHT, 0.0f, 0.0f, 0.0f, 0, {}, },
+		SENSOR_TYPE_LIGHT, 0.0f, 0.0f, 0.0f, 0, 0, 0, {}, },
 #endif
 #ifdef TARGET_DEVICE_P3100
 	{ "GP2A Light Sensor", "SHARP", 1, SENSOR_TYPE_LIGHT,
-		SENSOR_TYPE_LIGHT, 0.0f, 0.0f, 0.0f, 0, {}, },
+		SENSOR_TYPE_LIGHT, 0.0f, 0.0f, 0.0f, 0, 0, 0, {}, },
 	{ "GP2A Proximity Sensor", "SHARP", 1, SENSOR_TYPE_PROXIMITY,
-		SENSOR_TYPE_PROXIMITY, 5.0f, 0.0f, 0.0f, 0, {}, },
+		SENSOR_TYPE_PROXIMITY, 5.0f, 0.0f, 0.0f, 0, 0, 0, {}, },
 #endif
 };
 
