@@ -1,4 +1,3 @@
-system/bin/dock_kbd_attach
 system/bin/geomagneticd
 system/bin/gpsd
 system/bin/orientationd
