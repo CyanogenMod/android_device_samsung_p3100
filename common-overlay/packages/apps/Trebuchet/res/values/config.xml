@@ -1,7 +1,8 @@
 <resources>
-    <bool name="is_large_screen">true</bool>
-    <bool name="config_cyanogenmod">true</bool>
+    <bool name="is_large_tablet">true</bool>
+    <bool name="allow_rotation">true</bool>
+<!--    <bool name="config_cyanogenmod">true</bool> -->
 
     <!-- Allow tablets to set grid size in settings, false disables -->
-    <bool name="config_workspaceTabletGrid">true</bool>
+<!--    <bool name="config_workspaceTabletGrid">true</bool>-->
 </resources>
