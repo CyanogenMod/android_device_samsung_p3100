@@ -96,7 +96,7 @@ We are able to have most of our routing static so do that
         <ctl name="DAC1 Volume" val="96"/>
         <ctl name="Left Output Mixer DAC Volume" val="7"/>
         <ctl name="Right Output Mixer DAC Volume" val="7"/>
-        <ctl name="Output Volume" val="57"/>
+        <ctl name="Output Volume" val="61"/>
         <ctl name="Earpiece Volume" val="1"/>
     </path>
     <path name="off">
@@ -106,7 +106,7 @@ We are able to have most of our routing static so do that
         <ctl name="DAC1 Volume" val="96"/>
         <ctl name="Left Output Mixer DAC Volume" val="7"/>
         <ctl name="Right Output Mixer DAC Volume" val="7"/>
-        <ctl name="Output Volume" val="57"/>
+        <ctl name="Output Volume" val="61"/>
         <ctl name="Earpiece Volume" val="1"/>
     </path>
 </device>
@@ -120,7 +120,7 @@ We are able to have most of our routing static so do that
         <ctl name="SPKR DAC1 Volume" val="1"/>
         <ctl name="Speaker Mixer Volume" val="3"/>
         <ctl name="Speaker Boost Volume" val="6"/>
-        <ctl name="Speaker Volume" val="59"/>
+        <ctl name="Speaker Volume" val="61"/>
     </path>
     <path name="off">
         <ctl name="SPK Switch" val="0"/>
@@ -130,7 +130,7 @@ We are able to have most of our routing static so do that
         <ctl name="SPKL DAC1 Volume" val="1"/>
         <ctl name="SPKR DAC1 Volume" val="1"/>
         <ctl name="Speaker Mixer Volume" val="0"/>
-        <ctl name="Speaker Volume" val="57"/>
+        <ctl name="Speaker Volume" val="61"/>
         <ctl name="Speaker Boost Volume" val="0"/>
     </path>
 </device>
@@ -141,7 +141,7 @@ We are able to have most of our routing static so do that
         <ctl name="AIF1DAC1 Volume" val="96"/>
         <ctl name="AIF1 Boost Volume" val="0"/>
         <ctl name="DAC1 Volume" val="96"/>
-        <ctl name="Headphone Volume" val="50"/>
+        <ctl name="Headphone Volume" val="61"/>
     </path>
     <path name="off">
         <ctl name="HP Switch" val="0"/>
@@ -149,7 +149,7 @@ We are able to have most of our routing static so do that
         <ctl name="AIF1DAC1 Volume" val="96"/>
         <ctl name="AIF1 Boost Volume" val="0"/>
         <ctl name="DAC1 Volume" val="96"/>
-        <ctl name="Headphone Volume" val="45"/>
+        <ctl name="Headphone Volume" val="61"/>
     </path>
 </device>
 <device name="sco-out">
@@ -178,7 +178,7 @@ We are able to have most of our routing static so do that
         <ctl name="DAC1 Volume" val="96"/>
         <ctl name="Left Output Mixer DAC Volume" val="7"/>
         <ctl name="Right Output Mixer DAC Volume" val="7"/>
-        <ctl name="Output Volume" val="56"/>
+        <ctl name="Output Volume" val="63"/>
         <ctl name="LINEOUT1 Volume" val="1"/>
     </path>
     <path name="off">
@@ -190,7 +190,7 @@ We are able to have most of our routing static so do that
         <ctl name="DAC1 Volume" val="96 "/>
         <ctl name="Left Output Mixer DAC Volume" val="7"/>
         <ctl name="Right Output Mixer DAC Volume" val="7"/>
-        <ctl name="Output Volume" val="57 "/>
+        <ctl name="Output Volume" val="63 "/>
         <ctl name="LINEOUT1 Volume" val="1"/>
     </path>
 </device>
