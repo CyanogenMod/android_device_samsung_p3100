@@ -444,3 +444,8 @@ on property:ro.bootmode=charger
 service charger /charger
     class charger
     user root
+
+# stop cpboot-daemon for wifi-only device
+on property:ro.carrier=wifi-only
+    stop cpboot-daemon
+    stop ril-daemon
