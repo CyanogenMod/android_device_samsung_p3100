@@ -32,6 +32,8 @@
 /system/vendor/bin/pvrsrvctl_SGX540_120     u:object_r:pvrsrvinit_exec:s0
 
 /system/bin/dock_kbd_attach                 u:object_r:dock_kbd_attach_exec:s0
+
+/dev/tf_ctrl                                u:object_r:smc_device:s0
 /system/bin/smc_pa_ctrl                     u:object_r:smc_pa_exec:s0
 
 # Firmwares
