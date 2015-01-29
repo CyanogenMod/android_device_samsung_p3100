@@ -3,3 +3,5 @@ type orientationd, domain;
 type orientationd_exec, exec_type, file_type;
 
 init_daemon_domain(orientationd)
+
+allow orientationd input_device:chr_file { open read ioctl }
