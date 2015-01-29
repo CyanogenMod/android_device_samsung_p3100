@@ -4,3 +4,7 @@ type gpsd_exec, exec_type, file_type;
 
 init_daemon_domain(gpsd)
 net_domain(gpsd)
+
+allow gpsd self:process { execmem };
+allow gpsd rild:unix_stream_socket { connectto };
+allow gpsd sysfs_wake_lock:file { read write };

@@ -3,3 +3,7 @@ type orientationd, domain;
 type orientationd_exec, exec_type, file_type;
 
 init_daemon_domain(orientationd)
+
+allow orientationd self:process { execmem };
+allow orientationd sensors_device:dir { open read search };
+allow orientationd sensors_device:chr_file { open read write ioctl };

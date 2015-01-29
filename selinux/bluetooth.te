@@ -1,0 +1,2 @@
+allow bluetooth efs_block_device:dir { search };
+allow bluetooth sysfs:file  { write };
