@@ -47,11 +47,11 @@ on fs
     mkdir /efs
     mount_all /fstab.espresso
 
+    setprop ro.crypto.fuse_sdcard true
+
  # We chown/chmod /efs because mount is run as root + defaults
     chown radio system /efs
     chmod 0775 /efs
-
-    setprop ro.crypto.fuse_sdcard true
 
     mount debugfs /sys/kernel/debug /sys/kernel/debug
 
