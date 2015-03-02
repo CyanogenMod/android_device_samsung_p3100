@@ -1,18 +1,20 @@
 import init.espresso.usb.rc
 
 on init
+    chmod 0701 /mnt/media_rw
+    chown root root /mnt/media_rw
     mkdir /mnt/shell/emulated 0700 shell shell
-    mkdir /storage 0751 root sdcard_r
+    mkdir /storage 0550 system sdcard_r
     mkdir /storage/emulated 0555 root root
-    mkdir /storage/sdcard1 0700 root root
-    mkdir /storage/usbdisk0 0700 root root
-    mkdir /mnt/media_rw/sdcard1 0700 media_rw media_rw
-    mkdir /mnt/media_rw/usbdisk0 0700 media_rw media_rw
+    mkdir /storage/sdcard1 0775 system sdcard_rw
+    mkdir /storage/usbdisk0 0775 system sdcard_rw
+    mkdir /mnt/media_rw/sdcard1 0775 media_rw media_rw
+    mkdir /mnt/media_rw/usbdisk0 0775 media_rw media_rw
 
     export EXTERNAL_STORAGE /storage/emulated/legacy
-    export SECONDARY_STORAGE /storage/sdcard1
     export EMULATED_STORAGE_SOURCE /mnt/shell/emulated
     export EMULATED_STORAGE_TARGET /storage/emulated
+    export SECONDARY_STORAGE /storage/sdcard1:/storage/usbdisk0
 
     # for backwards compatibility
     symlink /storage/emulated/legacy /sdcard
@@ -46,12 +48,14 @@ loglevel 7
 on fs
     mkdir /efs
     mount_all /fstab.espresso
-
- # We chown/chmod /efs because mount is run as root + defaults
-    chown radio system /efs
-    chmod 0775 /efs
+    swapon_all /fstab.espresso
 
     setprop ro.crypto.fuse_sdcard true
+
+# We chown/chmod /efs because mount is run as root + defaults
+    chown radio system /efs
+    chmod 0771 /efs
+
 
     mount debugfs /sys/kernel/debug /sys/kernel/debug
 
@@ -76,7 +80,7 @@ on fs
 
 on post-fs-data
     # we will remap this as /storage/sdcard0 with the sdcard fuse tool
-    mkdir /data/media 0770 media_rw media_rw
+     mkdir /data/media 0775 media_rw media_rw
     chown media_rw media_rw /data/media
     mkdir /data/misc/wifi 0770 wifi system
     mkdir /data/misc/wifi/sockets 0770 wifi wifi
@@ -112,8 +116,8 @@ on post-fs-data
     chown bluetooth net_bt_stack /dev/ttyO1
     chmod 0660 /dev/ttyO1
     chmod 0660 /sys/class/rfkill/rfkill0/state
-    chown bluetooth net_bt_stack /sys/class/rfkill/rfkill0/state
-    chown bluetooth net_bt_stack /sys/class/rfkill/rfkill0/type
+    chown bluetooth bluetooth /sys/class/rfkill/rfkill0/state
+    chown bluetooth bluetooth /sys/class/rfkill/rfkill0/type
     restorecon /sys/class/rfkill/rfkill0/state
     restorecon /sys/class/rfkill/rfkill0/type
 
