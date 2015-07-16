@@ -30,12 +30,16 @@ LOCAL_PATH := device/samsung/p3100
 PRODUCT_AAPT_CONFIG := normal large tvdpi hdpi
 PRODUCT_AAPT_PREF_CONFIG := tvdpi
 
-# Init files
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/init.espresso.usb.rc:root/init.espresso.usb.rc \
-    $(LOCAL_PATH)/rootdir/init.espresso.rc:root/init.espresso.rc \
-    $(LOCAL_PATH)/rootdir/ueventd.espresso.rc:root/ueventd.espresso.rc \
-    $(LOCAL_PATH)/rootdir/fstab.espresso:root/fstab.espresso
+# Ramdisk
+PRODUCT_PACKAGES += \
+    fstab.espresso \
+    init.espresso.usb.rc \
+    init.espresso.rc \
+    ueventd.espresso.rc
+
+# Recovery Ramdisk
+PRODUCT_PACKAGES += \
+    init.recovery.espresso.rc
 
 # GPS
 PRODUCT_COPY_FILES += \
