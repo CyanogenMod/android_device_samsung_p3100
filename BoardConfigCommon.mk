@@ -114,6 +114,7 @@ BOARD_HAS_NO_MISC_PARTITION := true
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_SUPPRESS_EMMC_WIPE := true
 TARGET_RECOVERY_FSTAB := device/samsung/p3100/rootdir/etc/fstab.espresso
+TARGET_RECOVERY_DEVICE_DIRS += device/samsung/p3100
 RECOVERY_FSTAB_VERSION := 2
 
 # build swipe recovery by default
