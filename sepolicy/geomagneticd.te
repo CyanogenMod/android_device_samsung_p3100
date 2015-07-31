@@ -4,6 +4,7 @@ type geomagneticd_exec, exec_type, file_type;
 
 init_daemon_domain(geomagneticd)
 
+allow geomagneticd input_device:chr_file { read open ioctl };
 allow geomagneticd input_device:dir { search read open };
 allow geomagneticd self:process { execmem };
 allow geomagneticd sensor_data_file:dir { write add_name remove_name create };
