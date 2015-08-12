@@ -17,7 +17,7 @@
 # Include espresso-common makefile
 $(call inherit-product, device/samsung/espresso-common/espresso-common.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/samsung/espresso-common/overlay/aosp-common
+DEVICE_PACKAGE_OVERLAYS += device/samsung/p3100/overlay/aosp-common
 
 LOCAL_PATH := device/samsung/p3100
 
