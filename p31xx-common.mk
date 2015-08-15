@@ -38,4 +38,4 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.recovery.espresso.rc
 
-$(call inherit-product, vendor/samsung/p31xx/p31xx-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/p31xx/p31xx-vendor.mk)
