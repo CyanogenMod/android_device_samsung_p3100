@@ -1,3 +1,0 @@
-on init
-    # Set touchscreen to landscape mode for recovery
-    write /sys/devices/virtual/sec/tsp/pivot 0
