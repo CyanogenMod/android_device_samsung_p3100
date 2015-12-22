@@ -23,7 +23,7 @@ COMMONBASE=../../../vendor/$VENDOR/$COMMON/common
 DEVICEBASE=../../../vendor/$VENDOR/$COMMON/$DEVICE
 
 echo "Pulling common files..."
-for FILE in `cat proprietary-common-files.txt | grep -v ^# | grep -v ^$`; do
+for FILE in `cat ../espresso-common/proprietary-p31xx-files.txt | grep -v ^# | grep -v ^$`; do
     DIR=`dirname $FILE`
     if [ ! -d $COMMONBASE/$DIR ]; then
         mkdir -p $COMMONBASE/$DIR
@@ -32,7 +32,7 @@ for FILE in `cat proprietary-common-files.txt | grep -v ^# | grep -v ^$`; do
 done
 
 echo "Pulling device specific files..."
-for FILE in `cat proprietary-$DEVICE-files.txt | grep -v ^# | grep -v ^$`; do
+for FILE in `cat ../espresso-common/proprietary-p31xx-files.txt | grep -v ^# | grep -v ^$`; do
     DIR=`dirname $FILE`
     if [ ! -d $DEVICEBASE/$DIR ]; then
         mkdir -p $DEVICEBASE/$DIR

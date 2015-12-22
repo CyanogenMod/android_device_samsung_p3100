@@ -14,7 +14,8 @@
 # limitations under the License.
 #
 
-$(call inherit-product, device/samsung/p3100/p31xx-common.mk)
+# Include espresso-common makefile
+$(call inherit-product, device/samsung/espresso-common/espresso-common.mk)
 
 LOCAL_PATH := device/samsung/p3100
 
@@ -41,3 +42,4 @@ PRODUCT_COPY_FILES += \
 
 # Use the non-open-source parts, if they're present
 $(call inherit-product-if-exists, vendor/samsung/p31xx/p3100-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/p31xx/p31xx-vendor.mk)

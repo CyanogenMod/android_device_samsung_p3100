@@ -44,7 +44,7 @@ PRODUCT_COPY_FILES += \\
 EOF
 
 LINEEND=" \\"
-COUNT=`cat proprietary-common-files.txt | grep -v ^# | grep -v ^$ | wc -l | awk {'print $1'}`
+COUNT=`cat ../espresso-common/proprietary-p31xx-files.txt | grep -v ^# | grep -v ^$ | wc -l | awk {'print $1'}`
 for FILE in `cat proprietary-common-files.txt | grep -v ^# | grep -v ^$`; do
     COUNT=`expr $COUNT - 1`
     if [ $COUNT = "0" ]; then
