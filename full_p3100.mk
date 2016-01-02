@@ -19,7 +19,7 @@ $(call inherit-product-if-exists, frameworks/base/data/sounds/AudioPackage13.mk)
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-$(call inherit-product, device/samsung/p3100/p3100.mk)
+$(call inherit-product, device/samsung/p3100/device.mk)
 
 # Discard inherited values and use our own instead.
 PRODUCT_NAME := full_p3100
