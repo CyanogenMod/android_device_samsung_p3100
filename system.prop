@@ -6,4 +6,3 @@ rild.libargs=-d /dev/ttyGS0 --
 telephony.lteOnCdmaDevice=0
 ro.ril.hsxpa=1
 ro.ril.gprsclass=10
-ro.sf.hwrotation=270
