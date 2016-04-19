@@ -18,7 +18,7 @@ $(call inherit-product, device/samsung/p3100/p31xx-common.mk)
 
 LOCAL_PATH := device/samsung/p3100
 
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay/aosp
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -31,7 +31,6 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.telephony.ril_class=SamsungExynos4RIL \
     mobiledata.interfaces=pdp0,wlan0,gprs,ppp0
 
 # These are the hardware-specific features
