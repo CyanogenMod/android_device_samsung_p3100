@@ -15,7 +15,7 @@
 #
 
 # Include espresso-common makefile
-$(call inherit-product, device/samsung/espresso-common/espresso-common.mk)
+$(call inherit-product, device/samsung/espresso-common/espresso3g.mk)
 
 LOCAL_PATH := device/samsung/p3100
 
@@ -25,10 +25,6 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/espresso-common/overlay/aosp-p31xx
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio_policy.conf:system/etc/audio_policy.conf
-
-# Packages
-PRODUCT_PACKAGES += \
-    SamsungServiceMode
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
