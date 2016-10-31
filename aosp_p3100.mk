@@ -17,14 +17,14 @@
 # Use 44.1 kHz UI sounds
 $(call inherit-product-if-exists, frameworks/base/data/sounds/AudioPackage13.mk)
 
-# Inherit from the common Open Source product configuration
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-
 # Inherit device specific configuration
 $(call inherit-product, device/samsung/p3100/device.mk)
 
-PRODUCT_DEVICE := p3100
+# Inherit from the common Open Source product configuration
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+
 PRODUCT_NAME := aosp_p3100
+PRODUCT_DEVICE := p3100
 PRODUCT_BRAND := Android
 PRODUCT_MODEL := GT-P3100
 PRODUCT_MANUFACTURER := Samsung
