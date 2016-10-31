@@ -21,6 +21,9 @@
      for different hardware and product builds. -->
 <resources>
 
+    <!-- Boolean to enable stk functionality on Samsung phones -->
+    <bool name="config_samsung_stk">true</bool>
+
     <!-- If this is true, the screen will fade off.
          espresso: needed on p31xx if hwrotation=270 -->
     <bool name="config_animateScreenLights">false</bool>
