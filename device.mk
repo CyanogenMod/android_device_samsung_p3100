@@ -19,10 +19,10 @@ $(call inherit-product, device/samsung/espresso-common/espresso3g.mk)
 
 LOCAL_PATH := device/samsung/p3100
 
+# Include 3g overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay/aosp
-DEVICE_PACKAGE_OVERLAYS += device/samsung/espresso-common/overlay/aosp-p31xx
 
-# Audio
+# Audio Config
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio_policy.conf:system/etc/audio_policy.conf
 
